@@ -1,0 +1,63 @@
+train_data:
+  dir: train_kin/motion/processed
+  mask: [src, tgt]
+
+representation:
+  skel: [lo, go] # S
+  pose: [q, p, r, pv, qv, pprev, c] # D_t
+  out: [r, q, c] # \hat{D_t}
+
+model:
+  z_dim: 32
+  normalize_z: False
+  Encoder:
+    d_model: 256
+    num_layers: 3
+    num_heads: 8
+    ff_dim: 1024
+  Decoder:
+    d_model: 256
+    num_layers: 3
+    num_heads: 8
+    ff_dim: 1024
+  # load: 
+  #   - dir: blahblah
+  #     epoch: 
+  #     prefix: encoder
+  #     freeze: True
+
+train:
+  consq_n: 8
+  batch_size: 64 # 512 if GPU memory allows
+  grad_max_norm: 0.5
+  learning_rate: 0.0005
+  
+  lr_schedule: 
+    type: exponential
+    gamma: 0.99
+    min: 0.01
+
+  epoch_num: 300
+  save_per: 100
+
+  # load trainer to continue training
+  # load:
+  #   dir: prev_trainer
+  #   epoch: None
+
+  # misc
+  copy_orig_contact: False
+
+  loss:
+    q: 5
+    p: 0.01
+    r: 10
+    pv: 1
+    c: 1
+    cv: 6
+    z_contrast_eucl: 1
+    pen: 0.1
+    slide: 6
+    jerk: 0.2
+
+  metric: [qR, ra_xz, pa, slide, jerk, pen] 

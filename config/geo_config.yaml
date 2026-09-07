@@ -1,0 +1,59 @@
+train_data:
+  dir: train_geo/motion/processed
+  mask: []
+
+representation:
+  skel: [lo, go] # S
+  pose: [q, p, r, pv, qv, pprev, c] # D_t
+  mesh: [vp, vn] # M_t
+  out: [r, q, c] # \hat{D_t}
+
+model:
+  pretrained:
+    model_epoch: kin
+    freeze_all: True
+    freeze_prefix: [] # e.g. [encoder]
+  
+  geometry:
+    d_model: 256
+    use_static: True
+    use_skin_w: True
+    use_jacobian: True
+
+train:
+  consq_n: 8
+  batch_size: 24
+  grad_max_norm: 0.5
+  learning_rate: 0.00001
+
+  lr_schedule:
+    type: exponential
+    gamma: 0.99
+    min: 0.01
+
+  epoch_num: 200
+  save_per: 100
+
+  # load trainer to continue fine-tuning
+  # load:
+  #   dir: prev_finetune
+  #   epoch: None
+
+  copy_orig_contact: False
+
+  loss:
+    q: 5
+    p: 0.01
+    r: 10
+    pv: 1
+    c: 1
+    cv: 6
+    pen: 0.1
+    slide: 6
+    jerk: 0.2
+    
+    sdf_pen: 0.1
+    delta_joint_sparse: 0.1
+    delta_z_sparse: 0.1
+
+  metric: [qR, ra_xz, pa, slide, jerk, pen]

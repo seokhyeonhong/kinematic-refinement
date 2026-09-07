@@ -1,0 +1,3 @@
+[submodule "src/fairmotion"]
+	path = src/fairmotion
+	url = https://github.com/sunny-Codes/fairmotion.git
