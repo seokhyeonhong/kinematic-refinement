@@ -4,9 +4,9 @@
 
 Official implementation of *Skinned Motion Retargeting via Artifact-driven Kinematic Prior Refinement* (SIGGRAPH Asia 2026 / ACM Transactions on Graphics).
 
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.06517)
 [![Project Page](https://img.shields.io/badge/Project-Page-1F6FEB?logo=googlechrome&logoColor=white)](https://seokhyeonhong.github.io/projects/kinematic-refinement/)
 [![YouTube](https://img.shields.io/badge/YouTube-Video-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=gpWf8LOA6eQ)
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.06517)
 
 
 ## ⚙️ Installation
