@@ -6,8 +6,7 @@ Official implementation of *Skinned Motion Retargeting via Artifact-driven Kinem
 
 [![Project Page](https://img.shields.io/badge/Project-Page-1F6FEB?logo=googlechrome&logoColor=white)](https://seokhyeonhong.github.io/projects/kinematic-refinement/)
 [![YouTube](https://img.shields.io/badge/YouTube-Video-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=gpWf8LOA6eQ)
-(To-be-updated: arXiv)
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/search/?query=Skinned+Motion+Retargeting+via+Artifact-driven+Kinematic+Prior+Refinement&searchtype=title) -->
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.06517)
 
 
 ## ⚙️ Installation
