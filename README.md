@@ -186,7 +186,15 @@ After preprocessing, set `train_data.dir` in a copy of `config/kin_config.yaml` 
 * We adopted [fairmotion](https://github.com/facebookresearch/fairmotion) library modified by SAME: [modified version](https://github.com/sunny-Codes/fairmotion/tree/895e15e8e0a8ae85f2315a5706402ffe0715f53f).
 
 ## 📜 Citation
-Will-be-updated
+
+```
+@article{hong2026skinned,
+  title={Skinned Motion Retargeting via Artifact-driven Kinematic Prior Refinement},
+  author={Hong, Seokhyeon and Kim, Chaelin and Jang, Inseo and Choi, Soojin and Noh, Junyong},
+  journal={arXiv preprint arXiv:2609.06517},
+  year={2026}
+}
+```
 
 ## ✉️ Contact
 
