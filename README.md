@@ -44,7 +44,7 @@ result/
     └── ms_dict.pt
 ```
 
-Download the datasets from [Google Drive](https://drive.google.com/drive/folders/1feKhAIJRruxuKjdbRYBacEw_4h0Qe_R4?usp=sharing) and extract them under `data/`.
+Download the datasets from [Google Drive](https://drive.google.com/drive/folders/1GNW5wY71BwRY9y0pJLLJ-dAPEmU_1MgN?usp=sharing) and extract them under `data/`.
 
 The resulting layout should include:
 
